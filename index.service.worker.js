@@ -4,7 +4,7 @@
 // Incrementing CACHE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
 /** @type {string} */
-const CACHE_VERSION = '1791771150|4126579';
+const CACHE_VERSION = '1791775358|5416537';
 /** @type {string} */
 const CACHE_PREFIX = 'Arcanjo - Mind G-sw-cache-';
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;
