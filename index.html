@@ -95,6 +95,7 @@ body {
 <link rel="manifest" href="index.manifest.json">
 <meta name="description" content="Arcanjo Mind Games: jogos para a mente, no seu ritmo.">
 <meta name="theme-color" content="#FAF8F2">
+<script>(function(){var A=window.AudioContext||window.webkitAudioContext;if(!A){return;}var all=[];function W(o){var c=o===undefined?new A():new A(o);all.push(c);return c;}W.prototype=A.prototype;window.AudioContext=W;if(window.webkitAudioContext){window.webkitAudioContext=W;}document.addEventListener('visibilitychange',function(){all.forEach(function(c){if(document.hidden){c.suspend();}else{c.resume();}});});})();</script>
 <style>html, body { background-color: #FAF8F2 !important; overscroll-behavior: none; -webkit-tap-highlight-color: transparent; -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; } #canvas { -webkit-tap-highlight-color: transparent; }</style>
 	</head>
 	<body>
@@ -114,7 +115,7 @@ body {
 
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":false,"executable":"index","experimentalVK":true,"fileSizes":{"index.pck":8548656,"index.wasm":39513091},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4,"serviceWorker":"index.service.worker.js"};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":false,"executable":"index","experimentalVK":true,"fileSizes":{"index.pck":8552416,"index.wasm":39513091},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4,"serviceWorker":"index.service.worker.js"};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
