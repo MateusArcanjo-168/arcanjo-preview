@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arcanjo Mind Games</title>
+<meta name="description" content="Arcanjo Mind Games: a cozy collection of 20 brain games by Arcanjo Digital Studios.">
+<meta property="og:title" content="Arcanjo Mind Games">
+<meta property="og:image" content="share.png">
+<style>
+  :root { --bg: #f7f3ea; --ink: #2f3b35; --muted: #66706a; --accent: #2f5d4e; --card: #fffdf8; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #1d2320; --ink: #eef0ea; --muted: #a9b1ab; --accent: #8fc7a9; --card: #262d29; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: var(--bg); color: var(--ink);
+         font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; padding: 24px 16px; }
+  main { max-width: 440px; width: 100%; text-align: center; background: var(--card); border-radius: 24px; padding: 28px 22px; box-shadow: 0 8px 30px rgba(0,0,0,.08); }
+  img { width: 100%; border-radius: 16px; }
+  h1 { font-size: 26px; margin: 18px 0 6px; }
+  p { color: var(--muted); margin: 0 0 20px; }
+  a.play { display: block; background: var(--accent); color: var(--card); text-decoration: none; font-weight: 700; padding: 14px; border-radius: 14px; }
+  small { display: block; margin-top: 18px; }
+  small a { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <img src="share.png" alt="Arcanjo Mind Games">
+  <h1>Arcanjo Mind Games</h1>
+  <p id="text">This test version has ended. The game is now available on itch.io.</p>
+  <a class="play" id="play" href="https://arcanjo-digital-studios.itch.io/arcanjo-mind-games">Play on itch.io</a>
+  <small><a href="privacy.html" id="privacy">Privacy policy</a></small>
+</main>
+<script>
+  if ((navigator.language || "").toLowerCase().startsWith("pt")) {
+    document.documentElement.lang = "pt-BR";
+    document.getElementById("text").textContent = "A versão de teste terminou. Agora o jogo está no itch.io.";
+    document.getElementById("play").textContent = "Jogar no itch.io";
+    document.getElementById("privacy").textContent = "Política de privacidade";
+  }
+</script>
+</body>
+</html>
